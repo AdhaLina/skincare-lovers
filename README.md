@@ -1,14 +1,16 @@
-# 🌿 Skincare Lovers — Affiliate Marketing Website
+# 🌸 Seoul Glow — Korean Skincare (K-Beauty) Affiliate Website
 
-A fast, clean, mobile-friendly skincare affiliate website. No build step, no
-frameworks — just open it in a browser and it works. Ready to host for free.
+A fast, clean, mobile-friendly **Korean skincare** affiliate website. No build
+step, no frameworks — just open it in a browser and it works. Ready to host for
+free. Built around the K-beauty glass-skin routine (double cleansing, essences,
+snail mucin, cica, and Korean sunscreen).
 
 ## What's inside
 
 | File | Purpose |
 |------|---------|
 | `index.html` | Homepage — hero, product picks (with filters), routine, newsletter |
-| `guides.html` | SEO content: skin types, layering order, ingredient guide |
+| `guides.html` | SEO content: glass skin, double cleansing, essence vs serum, K-beauty ingredients |
 | `disclosure.html` | **FTC affiliate disclosure + privacy** (legally important) |
 | `data/products.js` | **Your product list & affiliate links — edit this** |
 | `css/style.css` | All styling |
@@ -28,10 +30,11 @@ python3 -m http.server 8000
 
 ## 💰 Add your affiliate links (the important part)
 
-1. Sign up for an affiliate program:
-   - **Amazon Associates** — https://affiliate-program.amazon.com (easiest to start)
-   - **ShareASale / Impact / Rakuten** — for individual skincare brands
-   - **Sephora / Ulta affiliate programs** — via their affiliate networks
+1. Sign up for an affiliate program (these are the best for K-beauty):
+   - **Amazon Associates** — https://affiliate-program.amazon.com (easiest to start; carries most K-beauty brands)
+   - **YesStyle** — huge Korean skincare catalog with its own affiliate program
+   - **Stylevana / iHerb / Olive Young Global** — popular K-beauty retailers with affiliate programs
+   - **ShareASale / Impact / Rakuten** — networks that host individual Korean brands
 2. Open `data/products.js`.
 3. For each product, replace the `link:` value with your affiliate URL. Example:
 
@@ -71,4 +74,4 @@ branch → `/root`.
   `<form id="newsletter-form">` in `index.html`.
 
 ---
-Built as a starting point — make it yours. 💚
+Built as a starting point for your K-beauty site — make it yours. 🌸

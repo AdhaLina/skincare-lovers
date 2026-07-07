@@ -1,18 +1,18 @@
 /* =========================================================
-   Skincare Lovers — Affiliate site styles
-   Palette: soft, spa-like greens & warm neutrals
+   Seoul Glow — K-beauty affiliate site styles
+   Palette: dewy porcelain, glass-skin rose & soft gold
    ========================================================= */
 
 :root {
-  --bg: #fbf9f6;
+  --bg: #fdf7f6;
   --surface: #ffffff;
-  --ink: #2e2a26;
-  --ink-soft: #6b645c;
-  --line: #ece7e0;
-  --brand: #3f8f79;      /* eucalyptus green */
-  --brand-dark: #2f6d5c;
-  --accent: #e6a17a;     /* warm peach */
-  --gold: #e0b64a;       /* stars */
+  --ink: #34292c;
+  --ink-soft: #7a6a6e;
+  --line: #f2e6e6;
+  --brand: #c2557a;      /* glass-skin rose */
+  --brand-dark: #9d3d61;
+  --accent: #e0a35c;     /* soft gold */
+  --gold: #e6b34a;       /* stars */
   --radius: 16px;
   --shadow: 0 10px 30px rgba(47, 42, 38, 0.08);
   --shadow-sm: 0 4px 14px rgba(47, 42, 38, 0.06);
@@ -95,7 +95,7 @@ section { padding: 64px 0; }
 
 /* ---------- Hero ---------- */
 .hero {
-  background: linear-gradient(160deg, #eef5f1 0%, #fbf9f6 60%);
+  background: linear-gradient(160deg, #fbe7ec 0%, #eef1fb 45%, #fdf7f6 80%);
   padding: 80px 0 72px;
 }
 .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
@@ -118,11 +118,11 @@ section { padding: 64px 0; }
   display: grid;
   place-items: center;
   font-size: 2.6rem;
-  background: #f5f1ea;
+  background: #fbe7ec;
 }
-.hero-visual .tile:nth-child(2){ background:#eef5f1; }
-.hero-visual .tile:nth-child(3){ background:#faf1e9; }
-.hero-visual .tile:nth-child(4){ background:#f0f4f7; }
+.hero-visual .tile:nth-child(2){ background:#eef1fb; }
+.hero-visual .tile:nth-child(3){ background:#faf0e6; }
+.hero-visual .tile:nth-child(4){ background:#f6eaf1; }
 
 .trust-row { display: flex; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
 .trust-row div { font-size: .9rem; color: var(--ink-soft); }
@@ -130,7 +130,7 @@ section { padding: 64px 0; }
 
 /* ---------- Disclosure banner ---------- */
 .disclosure-strip {
-  background: #f4efe7;
+  background: #f9ecef;
   border-bottom: 1px solid var(--line);
   font-size: .82rem;
   color: var(--ink-soft);
@@ -177,7 +177,7 @@ section { padding: 64px 0; }
   display: grid;
   place-items: center;
   font-size: 3.4rem;
-  background: linear-gradient(150deg, #eef5f1, #f7f2ec);
+  background: linear-gradient(150deg, #fbe7ec, #eef1fb);
 }
 .card-badge {
   position: absolute;
@@ -200,7 +200,7 @@ section { padding: 64px 0; }
 .rating-num { color: var(--ink-soft); font-size: .82rem; margin-left: .3rem; }
 .price { font-weight: 800; font-size: 1.15rem; }
 .pros { list-style: none; padding: 0; margin: .2rem 0 .4rem; display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
-.pros li { font-size: .76rem; background: #eef5f1; color: var(--brand-dark); padding: 3px 9px; border-radius: 999px; }
+.pros li { font-size: .76rem; background: #fbe7ec; color: var(--brand-dark); padding: 3px 9px; border-radius: 999px; }
 .card .btn { margin-top: .6rem; }
 .no-results { text-align: center; color: var(--ink-soft); grid-column: 1/-1; padding: 40px; }
 
@@ -224,14 +224,14 @@ section { padding: 64px 0; }
 
 /* ---------- Newsletter ---------- */
 .newsletter {
-  background: linear-gradient(150deg, #2f6d5c, #3f8f79);
+  background: linear-gradient(150deg, #9d3d61, #c2557a);
   color: #fff;
   border-radius: 24px;
   padding: 48px;
   text-align: center;
 }
 .newsletter h2 { color: #fff; }
-.newsletter p { color: #dcefe7; max-width: 460px; margin: 0 auto 1.6rem; }
+.newsletter p { color: #f6dfe6; max-width: 460px; margin: 0 auto 1.6rem; }
 .newsletter form { display: flex; gap: .6rem; max-width: 440px; margin: 0 auto; flex-wrap: wrap; }
 .newsletter input {
   flex: 1;
@@ -243,7 +243,7 @@ section { padding: 64px 0; }
 }
 .newsletter .btn { background: var(--accent); }
 .newsletter .btn:hover { background: #d98d61; }
-.newsletter .form-note { font-size: .8rem; color: #cfe7de; margin-top: .8rem; }
+.newsletter .form-note { font-size: .8rem; color: #eecdd8; margin-top: .8rem; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: #2e2a26; color: #d8d2ca; padding: 56px 0 28px; }
@@ -264,7 +264,7 @@ section { padding: 64px 0; }
 }
 
 /* ---------- Content pages (guides / disclosure) ---------- */
-.page-head { background: linear-gradient(160deg, #eef5f1, #fbf9f6); padding: 60px 0 40px; text-align: center; }
+.page-head { background: linear-gradient(160deg, #fbe7ec, #eef1fb 60%, #fdf7f6); padding: 60px 0 40px; text-align: center; }
 .page-head h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
 .page-head p { color: var(--ink-soft); max-width: 600px; margin: 0 auto; }
 .prose { max-width: 760px; margin: 0 auto; }
@@ -272,7 +272,7 @@ section { padding: 64px 0; }
 .prose p, .prose li { color: #4a453f; }
 .prose ul { padding-left: 1.2rem; }
 .callout {
-  background: #f4efe7;
+  background: #f9ecef;
   border-left: 4px solid var(--accent);
   border-radius: 10px;
   padding: 18px 22px;
