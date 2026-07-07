@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skincare Lovers — Honest Reviews & Skincare Picks</title>
+  <meta name="description" content="Hand-tested skincare recommendations, routines, and honest reviews to help you build a simple routine that works for your skin type." />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="Skincare Lovers — Honest Skincare Reviews & Picks" />
+  <meta property="og:description" content="Simple, effective skincare picks for every skin type." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- FTC affiliate disclosure (required, keep visible) -->
+  <div class="disclosure-strip">
+    This site contains affiliate links. We may earn a commission at no extra cost to you.
+    <a href="disclosure.html">Learn more</a>.
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="leaf">🌿</span> Skincare Lovers</a>
+      <ul class="nav-links">
+        <li><a href="#products">Reviews</a></li>
+        <li><a href="#routine">Routine</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+        <li><a href="disclosure.html">Disclosure</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Glow, simplified</span>
+        <h1>Skincare that actually works — without the guesswork.</h1>
+        <p class="lead">
+          We test and review skincare so you don't have to. Find the right cleanser,
+          serum, and SPF for <em>your</em> skin type — no 12-step routines required.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn">Shop Top Picks</a>
+          <a href="#routine" class="btn btn--ghost">Build a Routine</a>
+        </div>
+        <div class="trust-row">
+          <div><strong>9+</strong> products tested</div>
+          <div><strong>5</strong> skin types covered</div>
+          <div><strong>100%</strong> honest reviews</div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="tile">🧴</div>
+        <div class="tile">🍊</div>
+        <div class="tile">💧</div>
+        <div class="tile">☀️</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <div class="container">
+      <h2 class="section-title">Our Top Skincare Picks</h2>
+      <p class="section-sub">
+        Editor-tested favorites across every category. Filter by what you're shopping for.
+      </p>
+
+      <div class="filters">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="cleanser">Cleansers</button>
+        <button class="filter-pill" data-filter="serum">Serums</button>
+        <button class="filter-pill" data-filter="moisturizer">Moisturizers</button>
+        <button class="filter-pill" data-filter="sunscreen">Sunscreen</button>
+        <button class="filter-pill" data-filter="treatment">Treatments</button>
+      </div>
+
+      <div class="product-grid" id="product-grid">
+        <!-- Cards injected by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Routine -->
+  <section id="routine" style="background:#f4efe7;">
+    <div class="container">
+      <h2 class="section-title">The Simple 4-Step Routine</h2>
+      <p class="section-sub">
+        You don't need a shelf full of products. Master these four steps and your skin
+        will thank you.
+      </p>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Cleanse</h3>
+          <p>Wash away dirt and oil morning and night with a gentle, pH-balanced cleanser.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Treat</h3>
+          <p>Target concerns — brightening, hydration, or texture — with a focused serum.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Moisturize</h3>
+          <p>Lock in hydration and support your skin barrier, morning and night.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>Protect</h3>
+          <p>Finish every morning with SPF 30+ — the single best anti-aging step.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <div class="container">
+      <div class="newsletter">
+        <h2>Get our free skincare cheat sheet</h2>
+        <p>Join the list for honest reviews, routine tips, and the occasional deal. No spam, ever.</p>
+        <form id="newsletter-form">
+          <input type="email" placeholder="you@email.com" required aria-label="Email address" />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <p class="form-note">We respect your inbox. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="color:#fff;"><span class="leaf">🌿</span> Skincare Lovers</a>
+        <p>Honest, hand-tested skincare recommendations to help you glow with confidence.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#products">Reviews</a></li>
+          <li><a href="#routine">Routine</a></li>
+          <li><a href="guides.html">Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <ul class="footer-links">
+          <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="disclosure.html#privacy">Privacy</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      &copy; <span id="year">2026</span> Skincare Lovers. As an Amazon Associate we earn from qualifying purchases.
+    </div>
+  </footer>
+
+  <script src="data/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
