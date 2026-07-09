@@ -164,7 +164,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry"],
     blurb: "Wake up to plump, glowing skin — this overnight mask locks in moisture.",
     pros: ["Wake up dewy", "Non-greasy", "Barrier repair"],
-    link: "https://www.amazon.com/dp/EXAMPLE10?tag=seoulglow0f-20",
+    link: "https://amzn.to/4fqILEX",
   },
   {
     id: "snail-ceramide-cream",
