@@ -192,7 +192,7 @@ const PRODUCTS = [
     skinTypes: ["all", "sensitive"],
     blurb: "A weightless Korean SPF with no white cast — the final glass-skin step.",
     pros: ["No white cast", "Dewy finish", "Sits under makeup"],
-    link: "https://www.amazon.com/dp/EXAMPLE12?tag=seoulglow0f-20",
+    link: "https://amzn.to/4feJB6G",
   },
 ];
 
