@@ -66,7 +66,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry"],
     blurb: "A milky rice toner that preps skin and delivers an instant dewy glow.",
     pros: ["Brightening", "Layers well", "Alcohol-free"],
-    link: "https://www.amazon.com/dp/EXAMPLE3?tag=seoulglow0f-20",
+    link: "https://amzn.to/4wT6F23",
   },
   {
     id: "snail-mucin-essence",
