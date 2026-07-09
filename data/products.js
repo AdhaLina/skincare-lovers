@@ -17,7 +17,11 @@
  *   category  one of: cleanser | toner | essence | serum | mask | moisturizer | sunscreen
  *   price     display price string (e.g. "$28")
  *   rating    number 0-5 (supports .5 steps, e.g. 4.5)
- *   image     emoji or image URL used as the product visual
+ *   image     emoji shown when no photo is set (fallback visual)
+ *   photo     OPTIONAL real product photo. Add a file to the images/ folder and
+ *             set e.g. photo: "images/snail-mucin.jpg". If set, it replaces the
+ *             emoji on the card. Use your OWN photo or a free-licensed one
+ *             (Pexels/Unsplash). Omit this field to keep the emoji.
  *   tag       short badge, e.g. "Editor's Pick" or "" for none
  *   skinTypes array of: dry | oily | combination | sensitive | all
  *   blurb     one-line summary

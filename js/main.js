@@ -23,11 +23,15 @@
     const pros = (p.pros || [])
       .map((pro) => `<li>${pro}</li>`)
       .join("");
+    // Show a real photo if `photo` is set, otherwise fall back to the emoji.
+    const media = p.photo
+      ? `<img class="card-photo" src="${p.photo}" alt="${p.name}" loading="lazy" />`
+      : `<span class="card-emoji" aria-hidden="true">${p.image}</span>`;
     return `
       <article class="card" data-category="${p.category}">
         <div class="card-media">
           ${badge}
-          <span aria-hidden="true">${p.image}</span>
+          ${media}
         </div>
         <div class="card-body">
           <span class="card-brand">${p.brand}</span>
