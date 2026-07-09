@@ -122,7 +122,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "sensitive"],
     blurb: "Multi-weight hyaluronic acid for that plump, dewy, see-through glow.",
     pros: ["Instant plump", "Non-sticky", "Layer-friendly"],
-    link: "https://www.amazon.com/dp/EXAMPLE7?tag=seoulglow0f-20",
+    link: "https://amzn.to/3Tq4PXD",
   },
   {
     id: "propolis-ampoule",
