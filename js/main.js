@@ -38,11 +38,10 @@
             <span class="stars" title="${p.rating} out of 5">
               ${starString(p.rating)}<span class="rating-num">${p.rating.toFixed(1)}</span>
             </span>
-            <span class="price">${p.price}</span>
           </div>
           <a class="btn btn--block" href="${p.link}" target="_blank"
              rel="sponsored nofollow noopener">
-            Check Price →
+            Check Price on Amazon →
           </a>
         </div>
       </article>`;
