@@ -108,7 +108,7 @@ const PRODUCTS = [
     skinTypes: ["sensitive", "all"],
     blurb: "Calms redness and irritation with soothing centella asiatica (cica).",
     pros: ["Reduces redness", "Barrier support", "Non-irritating"],
-    link: "https://www.amazon.com/dp/EXAMPLE6?tag=seoulglow0f-20",
+    link: "https://amzn.to/4vUKwQw",
   },
   {
     id: "glass-skin-serum",
