@@ -10,12 +10,23 @@ snail mucin, cica, and Korean sunscreen).
 | File | Purpose |
 |------|---------|
 | `index.html` | Homepage — hero, product picks (with filters), routine, newsletter |
+| `blog.html` | Blog index listing your review articles |
+| `articles/*.html` | Review articles (snail mucin review, beginner routine, best sunscreens) |
 | `guides.html` | SEO content: glass skin, double cleansing, essence vs serum, K-beauty ingredients |
+| `about.html` | About page (builds trust + helps affiliate approval) |
 | `disclosure.html` | **FTC affiliate disclosure + privacy** (legally important) |
 | `data/products.js` | **Your product list & affiliate links — edit this** |
 | `css/style.css` | All styling |
 | `js/main.js` | Renders products, filtering, mobile nav |
+| `netlify.toml`, `.github/workflows/deploy.yml` | One-click deploy config (Netlify or GitHub Pages) |
 | `robots.txt`, `sitemap.xml` | Basic SEO |
+
+## ✍️ Add / edit articles
+
+Articles live in `articles/`. To add one, copy an existing article file, edit
+the content, then add a matching `<a class="post-card">` card to `blog.html`
+and a `<url>` entry to `sitemap.xml`. The in-article "Check Price" boxes use the
+same affiliate links as `data/products.js` — keep them in sync.
 
 ## 🚀 Quick start
 

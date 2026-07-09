@@ -280,6 +280,49 @@ section { padding: 64px 0; }
   font-size: .95rem;
 }
 
+/* ---------- Blog index ---------- */
+.post-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 26px; }
+.post-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.post-card-media { aspect-ratio: 16 / 9; display: grid; place-items: center; font-size: 3.2rem; background: linear-gradient(150deg, #fbe7ec, #eef1fb); }
+.post-card-body { padding: 20px; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
+.post-cat { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--brand-dark); font-weight: 800; }
+.post-card h3 { font-size: 1.15rem; margin: 0; }
+.post-card p { color: var(--ink-soft); font-size: .92rem; margin: 0; }
+.post-card .readmore { margin-top: auto; padding-top: .3rem; color: var(--brand-dark); font-weight: 700; font-size: .9rem; }
+
+/* ---------- Article page ---------- */
+.article-meta { color: var(--ink-soft); font-size: .9rem; margin-top: .6rem; }
+.article-meta .dot { margin: 0 .5rem; opacity: .5; }
+.article-cat { display: inline-block; background: var(--brand); color: #fff; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; padding: 4px 12px; border-radius: 999px; margin-bottom: 1rem; }
+.prose img { border-radius: var(--radius); margin: 1.5rem 0; }
+.rec-box {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: linear-gradient(150deg, #fbe7ec, #eef1fb);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 1.8rem 0;
+}
+.rec-box .rec-emoji { font-size: 2.6rem; line-height: 1; }
+.rec-box .rec-info { flex: 1; }
+.rec-box .rec-info strong { display: block; font-size: 1.05rem; }
+.rec-box .rec-info span { font-size: .86rem; color: var(--ink-soft); }
+.rec-box .btn { white-space: nowrap; }
+.article-footer-cta { text-align: center; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
@@ -304,4 +347,6 @@ section { padding: 64px 0; }
   .footer-grid { grid-template-columns: 1fr; }
   .newsletter { padding: 34px 22px; }
   section { padding: 48px 0; }
+  .rec-box { flex-direction: column; text-align: center; }
+  .rec-box .btn { width: 100%; justify-content: center; }
 }

@@ -1,0 +1,14 @@
+# Netlify config for a static site (no build step).
+# Deploy: connect this repo at https://app.netlify.com, or drag the
+# folder into https://app.netlify.com/drop
+[build]
+  publish = "."
+  command = ""
+
+# Nice-to-have security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
