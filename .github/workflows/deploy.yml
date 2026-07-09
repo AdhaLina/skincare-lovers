@@ -1,13 +1,15 @@
-# Deploys the static site to GitHub Pages on every push to the main branch.
+# Deploys the static site to GitHub Pages on every push.
 #
 # One-time setup: in your repo, go to Settings → Pages → "Build and
-# deployment" → Source: "GitHub Actions". Then push to main and this
-# workflow publishes the site automatically.
+# deployment" → Source: "GitHub Actions". Then push and this workflow
+# publishes the site automatically — free, with no credit limits.
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - claude/skincare-affiliate-site-4yjwar
   workflow_dispatch:
 
 permissions:
