@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Product Builder (private) — Seoul Glow</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .builder { max-width: 760px; margin: 0 auto; }
+    .builder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+    .field-full { grid-column: 1 / -1; }
+    label { display: block; font-weight: 700; font-size: .88rem; margin-bottom: .3rem; color: var(--ink); }
+    label .hint { font-weight: 400; color: var(--ink-soft); font-size: .8rem; }
+    input, select, textarea {
+      width: 100%; padding: 11px 13px; border: 1.5px solid var(--line);
+      border-radius: 10px; font-size: .95rem; font-family: inherit; background: var(--surface); color: var(--ink);
+    }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--brand); }
+    textarea { min-height: 64px; resize: vertical; }
+    .req { color: var(--brand-dark); }
+    .output-wrap { margin-top: 28px; }
+    pre.output {
+      background: #2e2a26; color: #f3ede4; border-radius: 12px; padding: 18px 20px;
+      overflow-x: auto; font-size: .86rem; line-height: 1.5; white-space: pre;
+    }
+    .btn-row { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 14px; }
+    .steps-box { background: #f9ecef; border-radius: 12px; padding: 18px 22px; margin-top: 24px; font-size: .93rem; }
+    .steps-box ol { margin: .4rem 0 0; padding-left: 1.2rem; }
+    .steps-box li { margin: .35rem 0; }
+    .copied { background: var(--accent) !important; }
+    @media (max-width: 620px){ .builder-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="leaf">🌸</span> Seoul Glow</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Back to site</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="page-head">
+    <div class="container">
+      <h1>🛠️ Product Builder</h1>
+      <p>Your private tool. Fill this in, copy the generated code, and paste it into your product list — no coding needed. (This page isn't linked publicly and won't show in Google.)</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container builder">
+      <form id="builder-form" class="builder-grid" autocomplete="off">
+        <div class="field-full">
+          <label>Product name <span class="req">*</span></label>
+          <input type="text" id="f-name" placeholder="e.g. Beauty of Joseon Relief Sun SPF 50" required />
+        </div>
+        <div>
+          <label>Brand <span class="req">*</span></label>
+          <input type="text" id="f-brand" placeholder="e.g. Beauty of Joseon" required />
+        </div>
+        <div>
+          <label>Category <span class="req">*</span></label>
+          <select id="f-category" required>
+            <option value="cleanser">Cleanser</option>
+            <option value="toner">Toner</option>
+            <option value="essence">Essence</option>
+            <option value="serum">Serum &amp; Ampoule</option>
+            <option value="mask">Mask</option>
+            <option value="moisturizer">Moisturizer</option>
+            <option value="sunscreen">Sunscreen</option>
+          </select>
+        </div>
+        <div>
+          <label>Image emoji <span class="hint">(one emoji)</span></label>
+          <input type="text" id="f-image" placeholder="🧴" maxlength="4" />
+        </div>
+        <div>
+          <label>Rating <span class="hint">(0–5)</span></label>
+          <input type="number" id="f-rating" placeholder="4.7" min="0" max="5" step="0.1" />
+        </div>
+        <div class="field-full">
+          <label>Badge <span class="hint">(optional — e.g. "Editor's Pick", or leave blank)</span></label>
+          <input type="text" id="f-tag" placeholder="Editor's Pick" />
+        </div>
+        <div class="field-full">
+          <label>One-line description <span class="req">*</span></label>
+          <input type="text" id="f-blurb" placeholder="A weightless daily SPF with no white cast." required />
+        </div>
+        <div class="field-full">
+          <label>Pros <span class="hint">(comma-separated, 2–4 short points)</span></label>
+          <input type="text" id="f-pros" placeholder="No white cast, Lightweight, Great for daily use" />
+        </div>
+        <div class="field-full">
+          <label>Affiliate link <span class="req">*</span> <span class="hint">(your amzn.to/... link)</span></label>
+          <input type="text" id="f-link" placeholder="https://amzn.to/XXXXXXX" required />
+        </div>
+        <div class="field-full">
+          <button type="submit" class="btn">Generate code ↓</button>
+        </div>
+      </form>
+
+      <div class="output-wrap" id="output-wrap" style="display:none;">
+        <h3>Your product code — copy this 👇</h3>
+        <pre class="output" id="output"></pre>
+        <div class="btn-row">
+          <button class="btn" id="copy-btn">📋 Copy code</button>
+          <a class="btn btn--ghost" id="github-btn" href="#" target="_blank" rel="noopener">Open products.js on GitHub →</a>
+        </div>
+
+        <div class="steps-box">
+          <strong>How to add it (1 minute):</strong>
+          <ol>
+            <li>Click <strong>“Copy code”</strong> above.</li>
+            <li>Click <strong>“Open products.js on GitHub”</strong>, then the ✏️ pencil to edit.</li>
+            <li>Scroll to the bottom and find the line <code>];</code></li>
+            <li>Paste your copied code on the line <strong>just above</strong> <code>];</code></li>
+            <li>Click <strong>“Commit changes”</strong>. Your site updates in ~1 minute. ✅</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border:0;">
+      &copy; <span id="year">2026</span> Seoul Glow — private tool.
+    </div>
+  </footer>
+
+  <script>
+    // ==== EDIT THIS if your repo/branch ever changes ====
+    var GITHUB_EDIT_URL =
+      "https://github.com/AdhaLina/skincare-lovers/edit/claude/skincare-affiliate-site-4yjwar/data/products.js";
+
+    function slugify(s){
+      return s.toLowerCase().trim()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "")
+        .slice(0, 40) || "product";
+    }
+    // keep strings safe inside double-quoted JS
+    function esc(s){ return String(s).replace(/\\/g, "").replace(/"/g, "'").trim(); }
+
+    var form = document.getElementById("builder-form");
+    var out = document.getElementById("output");
+    var wrap = document.getElementById("output-wrap");
+    document.getElementById("github-btn").href = GITHUB_EDIT_URL;
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById("f-name").value;
+      var brand = document.getElementById("f-brand").value;
+      var category = document.getElementById("f-category").value;
+      var image = document.getElementById("f-image").value || "🧴";
+      var ratingRaw = parseFloat(document.getElementById("f-rating").value);
+      var rating = isNaN(ratingRaw) ? 4.7 : Math.min(5, Math.max(0, ratingRaw));
+      var tag = document.getElementById("f-tag").value;
+      var blurb = document.getElementById("f-blurb").value;
+      var link = document.getElementById("f-link").value.trim();
+      var pros = document.getElementById("f-pros").value
+        .split(",").map(function(p){ return esc(p); }).filter(Boolean);
+
+      var prosStr = pros.length
+        ? "[" + pros.map(function(p){ return '"' + p + '"'; }).join(", ") + "]"
+        : "[]";
+
+      var code =
+        "  {\n" +
+        '    id: "' + slugify(name) + '",\n' +
+        '    name: "' + esc(name) + '",\n' +
+        '    brand: "' + esc(brand) + '",\n' +
+        '    category: "' + category + '",\n' +
+        "    rating: " + rating + ",\n" +
+        '    image: "' + image.trim() + '",\n' +
+        '    tag: "' + esc(tag) + '",\n' +
+        '    blurb: "' + esc(blurb) + '",\n' +
+        "    pros: " + prosStr + ",\n" +
+        '    link: "' + link + '",\n' +
+        "  },";
+
+      out.textContent = code;
+      wrap.style.display = "block";
+      wrap.scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("copy-btn").addEventListener("click", function(){
+      var btn = this;
+      navigator.clipboard.writeText(out.textContent).then(function(){
+        btn.textContent = "✓ Copied!";
+        btn.classList.add("copied");
+        setTimeout(function(){ btn.textContent = "📋 Copy code"; btn.classList.remove("copied"); }, 1600);
+      });
+    });
+  </script>
+</body>
+</html>
