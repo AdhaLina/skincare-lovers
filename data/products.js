@@ -94,7 +94,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "combination"],
     blurb: "A traditional hanbang (herbal) essence that firms and revitalizes tired skin.",
     pros: ["Firming", "Radiance boost", "Fast-absorbing"],
-    link: "https://www.amazon.com/dp/EXAMPLE5?tag=seoulglow0f-20",
+    link: "https://amzn.to/4vSvafk",
   },
   {
     id: "cica-ampoule",
