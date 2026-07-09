@@ -136,7 +136,7 @@ const PRODUCTS = [
     skinTypes: ["dry", "combination", "all"],
     blurb: "Honey and propolis nourish dull, dry skin into a lit-from-within glow.",
     pros: ["Nourishing", "Antioxidant-rich", "Comforting"],
-    link: "https://www.amazon.com/dp/EXAMPLE8?tag=seoulglow0f-20",
+    link: "https://amzn.to/4wrHl2G",
   },
   {
     id: "hydrating-sheet-mask",
