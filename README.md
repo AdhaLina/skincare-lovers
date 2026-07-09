@@ -50,7 +50,7 @@ python3 -m http.server 8000
 3. For each product, replace the `link:` value with your affiliate URL. Example:
 
    ```js
-   link: "https://www.amazon.com/dp/B00XXXXXXX?tag=YOURTAG-20",
+   link: "https://www.amazon.com/dp/B00XXXXXXX?tag=seoulglow0f-20",
    ```
 
 4. To add a product, copy an existing `{ ... }` block and edit the fields.

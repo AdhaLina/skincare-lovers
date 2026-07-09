@@ -8,7 +8,7 @@
  *   YesStyle affiliate, Stylevana, iHerb, etc. — all popular for K-beauty).
  *
  *   Example (Amazon Associates):
- *     link: "https://www.amazon.com/dp/B00XXXXXXX?tag=YOURTAG-20"
+ *     link: "https://www.amazon.com/dp/B00XXXXXXX?tag=seoulglow0f-20"
  *
  * FIELDS:
  *   id        unique slug (used internally)
@@ -38,7 +38,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "combination"],
     blurb: "Melts away sunscreen and makeup — the first half of the double cleanse.",
     pros: ["Rinses clean", "No greasy film", "Gentle on eyes"],
-    link: "https://www.amazon.com/dp/EXAMPLE1?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE1?tag=seoulglow0f-20",
   },
   {
     id: "green-tea-gel-cleanser",
@@ -52,7 +52,7 @@ const PRODUCTS = [
     skinTypes: ["all", "oily", "sensitive"],
     blurb: "A gentle, low-pH gel that cleanses without stripping your skin barrier.",
     pros: ["pH-balanced", "Won't over-dry", "Great value"],
-    link: "https://www.amazon.com/dp/EXAMPLE2?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE2?tag=seoulglow0f-20",
   },
   {
     id: "rice-toner",
@@ -66,7 +66,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry"],
     blurb: "A milky rice toner that preps skin and delivers an instant dewy glow.",
     pros: ["Brightening", "Layers well", "Alcohol-free"],
-    link: "https://www.amazon.com/dp/EXAMPLE3?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE3?tag=seoulglow0f-20",
   },
   {
     id: "snail-mucin-essence",
@@ -80,7 +80,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "combination"],
     blurb: "The cult K-beauty essence that plumps, repairs, and gives that glass-skin bounce.",
     pros: ["Deeply hydrating", "Fades marks", "Lightweight"],
-    link: "https://www.amazon.com/dp/EXAMPLE4?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE4?tag=seoulglow0f-20",
   },
   {
     id: "ginseng-essence",
@@ -94,7 +94,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "combination"],
     blurb: "A traditional hanbang (herbal) essence that firms and revitalizes tired skin.",
     pros: ["Firming", "Radiance boost", "Fast-absorbing"],
-    link: "https://www.amazon.com/dp/EXAMPLE5?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE5?tag=seoulglow0f-20",
   },
   {
     id: "cica-ampoule",
@@ -108,7 +108,7 @@ const PRODUCTS = [
     skinTypes: ["sensitive", "all"],
     blurb: "Calms redness and irritation with soothing centella asiatica (cica).",
     pros: ["Reduces redness", "Barrier support", "Non-irritating"],
-    link: "https://www.amazon.com/dp/EXAMPLE6?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE6?tag=seoulglow0f-20",
   },
   {
     id: "glass-skin-serum",
@@ -122,7 +122,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "sensitive"],
     blurb: "Multi-weight hyaluronic acid for that plump, dewy, see-through glow.",
     pros: ["Instant plump", "Non-sticky", "Layer-friendly"],
-    link: "https://www.amazon.com/dp/EXAMPLE7?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE7?tag=seoulglow0f-20",
   },
   {
     id: "propolis-ampoule",
@@ -136,7 +136,7 @@ const PRODUCTS = [
     skinTypes: ["dry", "combination", "all"],
     blurb: "Honey and propolis nourish dull, dry skin into a lit-from-within glow.",
     pros: ["Nourishing", "Antioxidant-rich", "Comforting"],
-    link: "https://www.amazon.com/dp/EXAMPLE8?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE8?tag=seoulglow0f-20",
   },
   {
     id: "hydrating-sheet-mask",
@@ -150,7 +150,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "sensitive"],
     blurb: "A 15-minute hydration boost — the K-beauty self-care staple.",
     pros: ["Instant glow", "Great value", "Travel-friendly"],
-    link: "https://www.amazon.com/dp/EXAMPLE9?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE9?tag=seoulglow0f-20",
   },
   {
     id: "sleeping-mask",
@@ -164,7 +164,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry"],
     blurb: "Wake up to plump, glowing skin — this overnight mask locks in moisture.",
     pros: ["Wake up dewy", "Non-greasy", "Barrier repair"],
-    link: "https://www.amazon.com/dp/EXAMPLE10?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE10?tag=seoulglow0f-20",
   },
   {
     id: "snail-ceramide-cream",
@@ -178,7 +178,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "sensitive"],
     blurb: "Rich yet breathable cream that seals in your routine and rebuilds the barrier.",
     pros: ["Long-lasting", "Soothing", "No greasy finish"],
-    link: "https://www.amazon.com/dp/EXAMPLE11?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE11?tag=seoulglow0f-20",
   },
   {
     id: "rice-sunscreen",
@@ -192,7 +192,7 @@ const PRODUCTS = [
     skinTypes: ["all", "sensitive"],
     blurb: "A weightless Korean SPF with no white cast — the final glass-skin step.",
     pros: ["No white cast", "Dewy finish", "Sits under makeup"],
-    link: "https://www.amazon.com/dp/EXAMPLE12?tag=YOURTAG-20",
+    link: "https://www.amazon.com/dp/EXAMPLE12?tag=seoulglow0f-20",
   },
 ];
 
