@@ -178,7 +178,7 @@ const PRODUCTS = [
     skinTypes: ["all", "dry", "sensitive"],
     blurb: "Rich yet breathable cream that seals in your routine and rebuilds the barrier.",
     pros: ["Long-lasting", "Soothing", "No greasy finish"],
-    link: "https://www.amazon.com/dp/EXAMPLE11?tag=seoulglow0f-20",
+    link: "https://amzn.to/4p91SXk",
   },
   {
     id: "rice-sunscreen",
