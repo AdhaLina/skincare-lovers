@@ -226,6 +226,20 @@ const PRODUCTS = [
     pros: ["No white cast", "Dewy finish", "Sits under makeup"],
     link: "https://amzn.to/4feJB6G",
   },
+  {
+    id: "laneige-lip-serum",
+    name: "LANEIGE Glaze Craze Tinted Lip Serum",
+    brand: "LANEIGE",
+    category: "lip",
+    price: "$24",
+    rating: 4.6,
+    image: "💄",
+    tag: "Amazon's Choice",
+    skinTypes: ["all"],
+    blurb: "A hydrating tinted lip serum with plumping polypeptides for glossy, buildable shine and a nourished lip barrier.",
+    pros: ["Glossy, buildable shine", "Plumping polypeptides", "Barrier-boosting"],
+    link: "https://amzn.to/4gtNo25",
+  },
 ];
 
 // Expose for browser use
