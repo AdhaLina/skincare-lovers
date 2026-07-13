@@ -240,6 +240,20 @@ const PRODUCTS = [
     pros: ["Glossy, buildable shine", "Plumping polypeptides", "Barrier-boosting"],
     link: "https://amzn.to/4gtNo25",
   },
+  {
+    id: "laneige-juicepop-lip-tint",
+    name: "LANEIGE Juicepop Box Lip Tint",
+    brand: "LANEIGE",
+    category: "lip",
+    price: "$21",
+    rating: 4.6,
+    image: "💋",
+    tag: "New",
+    skinTypes: ["all"],
+    blurb: "A juicy, lightweight lip tint that gives a plush wash of mauve color with a soft, non-drying finish.",
+    pros: ["Juicy color payoff", "Lightweight & non-drying", "Buildable mauve tint"],
+    link: "https://amzn.to/4pmRFH8",
+  },
 ];
 
 // Expose for browser use
