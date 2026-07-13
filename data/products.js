@@ -254,6 +254,20 @@ const PRODUCTS = [
     pros: ["Juicy color payoff", "Lightweight & non-drying", "Buildable mauve tint"],
     link: "https://amzn.to/4pmRFH8",
   },
+  {
+    id: "biodance-eye-patches",
+    name: "BIODANCE Collagen Peptide Eye Patches (60 Count)",
+    brand: "BIODANCE",
+    category: "mask",
+    price: "$22",
+    rating: 4.6,
+    image: "👀",
+    tag: "Amazon's Choice",
+    skinTypes: ["all", "dry"],
+    blurb: "Collagen and peptide under-eye patches that smooth fine lines, de-puff, and firm tired eyes.",
+    pros: ["Smooths fine lines", "De-puffs & firms", "60-count value"],
+    link: "https://amzn.to/4fbOygt",
+  },
 ];
 
 // Expose for browser use
