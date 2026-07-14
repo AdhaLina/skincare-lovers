@@ -268,6 +268,20 @@ const PRODUCTS = [
     pros: ["Smooths fine lines", "De-puffs & firms", "60-count value"],
     link: "https://amzn.to/4fbOygt",
   },
+  {
+    id: "erborian-eye-cream",
+    name: "Erborian Skin Hero Eye Cream Perfector",
+    brand: "Erborian",
+    category: "serum",
+    price: "$42",
+    rating: 4.4,
+    image: "👁️",
+    tag: "",
+    skinTypes: ["all", "dry"],
+    blurb: "A de-puffing eye cream that hydrates and blurs the look of fine lines for radiant, smooth under-eyes.",
+    pros: ["De-puffs", "Blurs fine lines", "Hydrating"],
+    link: "https://amzn.to/4ymaxtF",
+  },
 ];
 
 // Expose for browser use
