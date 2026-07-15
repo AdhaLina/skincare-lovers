@@ -282,6 +282,20 @@ const PRODUCTS = [
     pros: ["De-puffs", "Blurs fine lines", "Hydrating"],
     link: "https://amzn.to/4ymaxtF",
   },
+  {
+    id: "erborian-centella-cream",
+    name: "Erborian Centella Barrier Cream Recovery Balm",
+    brand: "Erborian",
+    category: "moisturizer",
+    price: "$44",
+    rating: 4.6,
+    image: "🌿",
+    tag: "Barrier Repair",
+    skinTypes: ["dry", "sensitive", "all"],
+    blurb: "A centella recovery balm that calms, deeply moisturizes with ceramides, and repairs the skin barrier.",
+    pros: ["Soothes & calms", "Ceramide barrier repair", "Rich & comforting"],
+    link: "https://amzn.to/4vs7Wf7",
+  },
 ];
 
 // Expose for browser use
