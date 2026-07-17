@@ -296,6 +296,20 @@ const PRODUCTS = [
     pros: ["Soothes & calms", "Ceramide barrier repair", "Rich & comforting"],
     link: "https://amzn.to/4vs7Wf7",
   },
+  {
+    id: "celimax-retinal-booster",
+    name: "celimax The Vita A Retinal Shot Tightening Booster",
+    brand: "celimax",
+    category: "serum",
+    price: "$25",
+    rating: 4.5,
+    image: "🌙",
+    tag: "Anti-Aging",
+    skinTypes: ["all", "combination"],
+    blurb: "A high-strength 0.1% retinal + Matrixyl booster that smooths fine lines, tightens, and refines pores.",
+    pros: ["0.1% retinal", "Firms & tightens", "Smooths fine lines"],
+    link: "https://amzn.to/4wdhV9o",
+  },
 ];
 
 // Expose for browser use
