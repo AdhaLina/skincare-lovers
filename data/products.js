@@ -324,6 +324,20 @@ const PRODUCTS = [
     pros: ["Prostaglandin-free", "Biotin + ginger extract", "Non-sticky & vegan"],
     link: "https://amzn.to/4yN2BCf",
   },
+  {
+    id: "seapuri-scalp-serum",
+    name: "Seapuri Scalpy Hair Growth Serum",
+    brand: "Seapuri",
+    category: "serum",
+    price: "$26",
+    rating: 4.4,
+    image: "💆‍♀️",
+    tag: "Scalp Care",
+    skinTypes: ["all"],
+    blurb: "A Korean scalp treatment with salicylic acid, menthol, and dexpanthenol that soothes the scalp and supports thicker, fuller-looking hair.",
+    pros: ["Salicylic acid + menthol", "Supports hair density", "Fuller-looking hair"],
+    link: "https://amzn.to/4puRR7b",
+  },
 ];
 
 // Expose for browser use
