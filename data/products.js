@@ -338,6 +338,20 @@ const PRODUCTS = [
     pros: ["Salicylic acid + menthol", "Supports hair density", "Fuller-looking hair"],
     link: "https://amzn.to/4puRR7b",
   },
+  {
+    id: "gisou-honey-shampoo",
+    name: "Gisou Honey Gloss Ceramide Therapy Hydrating Shampoo",
+    brand: "Gisou",
+    category: "serum",
+    price: "$38",
+    rating: 4.6,
+    image: "🍯",
+    tag: "Hair Care",
+    skinTypes: ["all"],
+    blurb: "A honey-infused, ceramide-rich hydrating shampoo that gently cleanses while nourishing hair for soft, glossy, healthy-looking strands.",
+    pros: ["Honey + ceramide therapy", "Deeply hydrating", "Glossy, soft hair"],
+    link: "https://amzn.to/4fbIdmj",
+  },
 ];
 
 // Expose for browser use
