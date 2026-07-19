@@ -310,6 +310,20 @@ const PRODUCTS = [
     pros: ["0.1% retinal", "Firms & tightens", "Smooths fine lines"],
     link: "https://amzn.to/4wdhV9o",
   },
+  {
+    id: "etude-lash-serum",
+    name: "ETUDE My Lash Serum (Prostaglandin-Free)",
+    brand: "ETUDE",
+    category: "serum",
+    price: "$18",
+    rating: 4.4,
+    image: "👁️",
+    tag: "Lash Care",
+    skinTypes: ["all", "sensitive"],
+    blurb: "A prostaglandin-free lash serum with biotin and ginger extract that strengthens and conditions lashes for healthier-looking growth — non-sticky and vegan.",
+    pros: ["Prostaglandin-free", "Biotin + ginger extract", "Non-sticky & vegan"],
+    link: "https://amzn.to/4yN2BCf",
+  },
 ];
 
 // Expose for browser use
