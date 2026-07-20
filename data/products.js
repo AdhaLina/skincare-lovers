@@ -352,6 +352,20 @@ const PRODUCTS = [
     pros: ["Honey + ceramide therapy", "Deeply hydrating", "Glossy, soft hair"],
     link: "https://amzn.to/4fbIdmj",
   },
+  {
+    id: "peach-slices-ingrown",
+    name: "Peach Slices Smoothing Solution Ingrown Hair Treatment",
+    brand: "Peach Slices",
+    category: "serum",
+    price: "$13",
+    rating: 4.4,
+    image: "🍑",
+    tag: "Body Care",
+    skinTypes: ["all", "sensitive"],
+    blurb: "A roll-on ingrown hair treatment with BHA, AHA, PHA, niacinamide, and licorice that smooths bumps, relieves irritation, and softens skin — vegan & cruelty-free.",
+    pros: ["BHA · AHA · PHA exfoliants", "Smooths ingrown bumps", "Vegan & cruelty-free"],
+    link: "https://amzn.to/4prwgMG",
+  },
 ];
 
 // Expose for browser use
