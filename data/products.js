@@ -366,6 +366,20 @@ const PRODUCTS = [
     pros: ["BHA · AHA · PHA exfoliants", "Smooths ingrown bumps", "Vegan & cruelty-free"],
     link: "https://amzn.to/4prwgMG",
   },
+  {
+    id: "arencia-salt-scrub",
+    name: "Arencia Fresh Cloud Sea Salt Body & Scalp Scrub",
+    brand: "Arencia",
+    category: "serum",
+    price: "$24",
+    rating: 4.5,
+    image: "🧂",
+    tag: "Body Care",
+    skinTypes: ["all"],
+    blurb: "A gentle sea salt scrub for body and scalp that buffs away dead skin and buildup, leaving skin softer and the scalp fresh and refreshed.",
+    pros: ["Sea salt exfoliation", "For body & scalp", "Softer, refreshed skin"],
+    link: "https://amzn.to/3Tqk6I4",
+  },
 ];
 
 // Expose for browser use
